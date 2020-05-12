@@ -15,6 +15,7 @@ html {
     font-size: 20px;
     font-weight: 300;
     text-rendering: optimizeLegibility;
+    overflow-x: hidden;
 }
 
 
@@ -36,12 +37,12 @@ html {
 /* --------------------------------- */
 
 .row {
-    max-width: 1600px;
+    max-width: 1140px;
     margin: 0 auto;
 }
 
 section {
-    padding: 80px;
+    padding: 80px 0;
 }
 
 .box {
@@ -97,13 +98,14 @@ h2:after {
 /* ----- PARAGRAPHS ----- */
 .long-copy {
     line-height: 145%;
-    width: 80%;
-    margin-left: 10%;
+    width: 70%;
+    margin-left: 15%;
 }
 
 .box p {
     font-size: 90%;
     line-height: 145%;
+    text-align: justify;
 }
 
 /* ----- ICONS ----- */
@@ -116,20 +118,23 @@ h2:after {
 }
 
 /* ----- BUTTONS ----- */
-a {
+a:link,
+a:visited {
     color: #e67e22;
     text-decoration: none;
     border-bottom: 1px solid  #e67e22;
     transition: border-bottom 0.2s, color 0.2s;
 }
 
-a:hover {
+a:hover,
+a:active {
     color: #555;
     border-bottom: 1px solid transparent;
 }
 
 /* ----- BUTTONS ----- */
-.btn,
+.btn:link,
+.btn:visited,
 input[type=submit] {
     display: inline-block;
     padding: 10px 30px;
@@ -140,25 +145,36 @@ input[type=submit] {
     transition: background-color 0.5s, border 0.5s, color 0.5s;
 }
 
-.btn:hover,
-input[type=submit]:hover {
-   background-color: #cf6d17; 
-   border-color: #cf6d17; 
-}
-
-.btn-full,
+.btn-full:link,
+.btn-full:visited,
 input[type=submit] {
     background-color: #e67e22;
     color: #fff;
     margin-right: 15px;
 }
 
-.btn-ghost {
-       color: #e67e22;
+.btn-ghost:link,
+.btn-ghost:visited {
+    border: 1px solid #e67e22;
+    color: #e67e22;
 }
 
-.btn-ghost:hover {
-       color:white;
+.btn:hover,
+.btn:active,
+input[type=submit]:hover,
+input[type=submit]:active {
+   background-color: #cf6d17; 
+}
+
+.btn-full:hover,
+.btn-full:active {
+    border: 1px solid #cf6d17;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
+    border: 1px solid #cf6d17;
+    color: #fff;
 }
 
 /* --------------------------------- */
@@ -175,7 +191,7 @@ header {
 
 .hero-text-box {
     position: absolute;
-    width: 1600px;
+    width: 1140px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -192,7 +208,7 @@ header {
 .main-nav {
     float: right;
     list-style: none;
-        margin-top: 55px;
+    margin-top: 55px;
 }
 
 .main-nav li {
@@ -204,7 +220,7 @@ header {
     color: white;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 120%;
+
     padding: 8px 0;
     border-bottom: 2px solid transparent;
     transition: border 0.2s;
@@ -459,8 +475,8 @@ select,
 textarea {
     width: 100%;
     padding: 7px;
-    /* border-radius: 3px; */
-    border:1 px solid #ccc
+    border-radius: 3px;
+    border: 1px solid #ccc
 }
 
 textarea {
@@ -499,8 +515,9 @@ footer {
 .footer-nav li,
 .social-links li {
     display: inline-block;
-    margin-right: 20px;;
+    margin-right: 20px;
 }
+
 .footer-nav li:last-child,
 .social-links li:last-child {
     margin-right: 0;
