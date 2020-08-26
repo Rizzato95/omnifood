@@ -135,7 +135,8 @@ a:active {
 /* ----- BUTTONS ----- */
 .btn:link,
 .btn:visited,
-input[type=submit] {
+input[type=submit],
+button {
     display: inline-block;
     padding: 10px 30px;
     font-weight: 300;
@@ -147,7 +148,8 @@ input[type=submit] {
 
 .btn-full:link,
 .btn-full:visited,
-input[type=submit] {
+input[type=submit],
+button {
     background-color: #e67e22;
     color: #fff;
     margin-right: 15px;
@@ -162,7 +164,9 @@ input[type=submit] {
 .btn:hover,
 .btn:active,
 input[type=submit]:hover,
-input[type=submit]:active {
+input[type=submit]:active,
+button:hover,
+button:active {
    background-color: #cf6d17; 
 }
 
