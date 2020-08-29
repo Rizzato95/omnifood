@@ -32,6 +32,10 @@ html {
 
 }
 
+.hide {
+    display: none;
+}
+
 /* --------------------------------- */
 /* REUSABLE COMPONENTS */
 /* --------------------------------- */
@@ -253,27 +257,8 @@ header {
   background-color: rgba(255, 255, 255, 0.98);
   box-shadow: 0 2px 2px #efefef;
   z-index: 9999;
-  -webkit-animation: scrolldown .5s;
-          animation: scrolldown .5s;
 }
 
-@-webkit-keyframes scrolldown {
-    from {
-        top: -20px;
-    }
-    to {
-        top: 0px;
-    }
-}
-
-@keyframes scrolldown {
-    from {
-        top: -20px;
-    }
-    to {
-        top: 0px;
-    }
-}
 
 .sticky .main-nav {
     margin-top: 20px;
@@ -291,6 +276,10 @@ header {
 
 .sticky .logo {
     display: none;
+}
+
+.sticky .logo-black {
+    cursor: pointer;
 }
 
 /* --------------------------------- */
@@ -629,4 +618,53 @@ footer p {
 
 .ion-social-instagram:hover {
    color: #c32aa3;
+}
+
+/* --------------------------------- */
+/* ANIMATIONS */
+/* --------------------------------- */
+
+.js-wp-1,
+.js-wp-2,
+.js-wp-3,
+.js-wp-4 {
+    opacity: 0;
+}
+
+.js-wp-1.animate__animated, 
+.js-wp-2.animate__animated, 
+.js-wp-3.animate__animated, 
+.js-wp-4.animate__animated {
+    opacity: 1;
+}
+
+/* --------------------------------- */
+/* GO TO THE TOP BUTTON */
+/* --------------------------------- */
+
+.go-to-the-top {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: #e67e22;
+    border-radius: 50%;
+    height:60px;
+    width: 60px;
+    font-size: 40px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    z-index: 9999;
+    
+}
+
+.go-to-the-top .arrow {
+    position: relative;
+    top: 6px;
+    color:white;
+    
+}
+
+.go-to-the-top:hover {
+    background-color: #cf6d17;
 }
