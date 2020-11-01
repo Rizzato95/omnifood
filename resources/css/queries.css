@@ -56,6 +56,10 @@
         margin: 0 0 4% 0;
     }
 
+    .meals-showcase li {
+        width: 50%;
+    }
+
     .main-nav { display: none;}
 
     h1 { font-size: 180%; }
