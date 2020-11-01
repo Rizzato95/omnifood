@@ -21,7 +21,7 @@ $(document).ready(function () {
             $('.go-to-the-top').removeClass('animate__fadeInRight');
         }
     }, {
-        offset: '20%'
+        offset: '5%'
     });
 
     // Scroll to plans
