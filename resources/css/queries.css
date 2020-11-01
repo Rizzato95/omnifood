@@ -95,6 +95,12 @@
 
 /* Small phones: from 0 to 480px */
 @media only screen and (max-width: 480px) {
+
+    header,
+    .section-testimonials { 
+        background-attachment: scroll; 
+    }
+
     section { padding: 25px 0; }
 
     footer { padding: 25px 0; }
@@ -106,7 +112,7 @@
     }
     
     cite {
-    margin-top: 10px;
-    margin-bottom: 15px;
+        margin-top: 10px;
+        margin-bottom: 15px;
     }
 }
