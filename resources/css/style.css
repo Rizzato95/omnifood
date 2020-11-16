@@ -190,7 +190,7 @@ button:active {
 /* --------------------------------- */
 
 header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/hero.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/hero-min.jpg);
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -245,6 +245,19 @@ header {
 
 .main-nav li a:hover {
     border-bottom: 2px solid #e67e22;
+}
+
+/* Mobile navi */
+.mobile-nav-icon {
+    float: right;
+    margin-top: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+.mobile-nav-icon i {
+ font-size: 200%;
+ color: #ffffff;
 }
 
 /* Sticky navigation */
@@ -420,7 +433,7 @@ header {
 /* --------------------------------- */
 
 .section-testimonials {
-    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(img/back-customers.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(img/back-customers-min.jpg);
     background-size: cover;
     color: white;
     background-attachment: fixed;
