@@ -3,13 +3,15 @@
 <html lang="en">
 
 <head>
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is a demo site for improve html5 and css3 skills.">
     <link rel="icon" type="image/png" href="resources/img/logo.png" />
     <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
     <link rel="stylesheet" type="text/css" href="vendors//css/grid.css">
     <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
-    <link rel="stylesheet" type="text/css" href="resources/css/style.css">
-    <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/style-min.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/queries-min.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap" rel="stylesheet">
     <title>Omnifood</title>
@@ -24,12 +26,13 @@
                 <a href="#header">
                     <img src="resources/img/logo.png" alt="Omnifood logo" class="logo-black">
                 </a>
-                <ul class="main-nav">
+                <ul class="main-nav js--main-nav">
                     <li><a href="#features">Food delivery</a></li>
                     <li><a href="#works">How it works</a></li>
                     <li><a href="#cities">Our cities</a></li>
                     <li><a href="#signup">Sign up</a></li>
                 </ul>
+                <a class="mobile-nav-icon js--nav-icon"><i class="ion-navicon-round"></i></a>
             </div>
         </nav>
         <div class="hero-text-box ">
@@ -83,7 +86,7 @@
         </div>
     </section>
 
-    <section class="section-meals">
+    <section class="section-meals" id="meals">
         <ul class="meals-showcase clearfix">
             <li>
                 <figure class="meal-photo">
@@ -136,7 +139,7 @@
         </div>
         <div class="row">
             <div class="col span-1-of-2 steps-box">
-                <img src="resources/img/app-iPhone.png" alt="Omnifood app on iphone" class="app-screen js-wp-2">
+                <img src="resources/img/app-iPhone-min.png" alt="Omnifood app on iphone" class="app-screen js-wp-2">
             </div>
             <div class="col span-1-of-2 steps-box">
                 <div class="works-step">
@@ -198,7 +201,7 @@
             </div>
 
             <div class="col span-1-of-4 box">
-                <img src="resources/img/berlin.jpg" alt="Berlin">
+                <img src="resources/img/berlin-min.jpg" alt="Berlin">
                 <h3>Berlin</h3>
                 <div class="city-feature">
                     <i class="ion-ios-person icon "></i>
@@ -383,7 +386,7 @@
                 </div>
                 <div class="row">
                     <div class="col span-1-of-3">
-                        <label for="">How did you find us?</label>
+                        <label for="find-us">How did you find us?</label>
                     </div>
                     <div class="col span-2-of-3">
                         <select name="find-us" id="find-us">
@@ -414,10 +417,10 @@
                 </div>
                 <div class="row">
                     <div class="col span-1-of-3">
-                        <label for="">&nbsp;</label>
+                        <label>&nbsp;</label>
                     </div>
                     <div class="col span-2-of-3">
-                        <button value="Send it!">Send it</button>
+                        <button name="sendIt" value="Send it!">Send it</button>
                     </div>
                 </div>
             </form>
@@ -452,7 +455,7 @@
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="vendors/js/jquery.waypoints.min.js"></script>
-    <script src="resources/js/script.js"></script>
+    <script src="resources/js/script-min.js"></script>
 </body>
 
 </html>
